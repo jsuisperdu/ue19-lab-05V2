@@ -28,7 +28,7 @@ jobs:
 
     # Étape 4 : Scanner l'image Docker avec Trivy
     - name: Scan Docker image for vulnerabilities
-      uses: aquasecurity/trivy-action@v0.11.0
+      uses: aquasecurity/trivy-action@0.29.0
       with:
         image-ref: ghcr.io/jsuisperdu/ue19-lab-05:latest
         format: table # Formate les résultats en tableau lisible
